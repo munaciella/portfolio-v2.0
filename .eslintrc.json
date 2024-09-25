@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-html-link-for-pages": "off" // Disable this rule
+  },
+  "settings": {
+    "next": {
+      "rootDir": "src" // Specify the root directory for your app
+    }
+  }
 }
