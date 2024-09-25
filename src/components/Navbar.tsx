@@ -70,7 +70,7 @@ const Navbar: FC = () => {
           <LinkedInIcon className="w-6 h-6 fill-dark" />
         </motion.a>
         <motion.a
-          href=""
+          href="https://dribbble.com/"
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
