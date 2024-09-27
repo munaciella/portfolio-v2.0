@@ -30,3 +30,6 @@ yarn-error.log*
 
 # Vercel deployment files
 .vercel/
+
+# VSCode
+.vscode/*
