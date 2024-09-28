@@ -3,6 +3,7 @@ import React from 'react';
 import { ReactNode } from 'react';
 import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
