@@ -413,6 +413,10 @@ export const LinkedInIcon = ({ className, ...rest }: { className?: string } & Re
     </svg>
   );
 
+  
+  
+
+  
   export const CircularText = ({ className, ...rest }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

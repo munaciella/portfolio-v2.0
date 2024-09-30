@@ -3,10 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 import profilePic from '../../public/images/profile/developer-pic-1.png';
 import type { NextPage } from 'next';
-import Profile from '@/components/Layout';
+import Profile from '@/components/Profile';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
+import HireMe from '@/components/HireMe';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 const HomePage: NextPage = () => {
   return (
@@ -44,6 +46,11 @@ const HomePage: NextPage = () => {
             </div>
           </div>
         </Profile>
+
+        <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image src={lightBulb} alt='Francesco Dev' className='w-full h-auto' />
+        </div>
       </main>
     </>
   );
