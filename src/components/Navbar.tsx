@@ -33,7 +33,7 @@ const CustomLink = ({
 
 const Navbar: FC = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-28 py-8 mt-1 font-medium text-lg flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -49,7 +49,7 @@ const Navbar: FC = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
-          <XIcon className="w-6 h-6 fill-dark" />
+          <XIcon className="w-7 h-7 fill-dark" />
         </motion.a>
         <motion.a
           href="https://github.com/munaciella"
@@ -58,7 +58,7 @@ const Navbar: FC = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <GithubIcon className="w-6 h-6 fill-dark" />
+          <GithubIcon className="w-7 h-7 fill-dark" />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/francesco-vurchio/"
@@ -67,7 +67,7 @@ const Navbar: FC = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <LinkedInIcon className="w-6 h-6 fill-dark" />
+          <LinkedInIcon className="w-7 h-7 fill-dark" />
         </motion.a>
         <motion.a
           href="https://dribbble.com/"
@@ -76,10 +76,10 @@ const Navbar: FC = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 ml-3"
         >
-          <DribbbleIcon className="w-6 h-6 fill-dark" />
+          <DribbbleIcon className="w-7 h-7 fill-dark" />
         </motion.a>
       </nav>
-      <div className="absolute left-1/2 top-2 -translate-x-1/2">
+      <div className="absolute left-1/2 top-2 -translate-x-1/2 mt-1">
         <Logo />
       </div>
     </header>
