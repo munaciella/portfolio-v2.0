@@ -16,7 +16,7 @@ const config = {
         primaryDark: '#58E6D9', // 80,230,217
       },
       animation: {
-        'spin-slow': 'spin 8s linear infinite',
+        'spin-slow': 'spin 11s linear infinite',
       }
     },
   },
