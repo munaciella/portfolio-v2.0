@@ -9,14 +9,14 @@ import React, { useEffect, useRef } from 'react';
 import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
-const AnimatedNumbers = ({ value }: { value: number } | null) => {
-  const ref = useRef<HTMLSpanElement | null>(null); // Explicitly type the ref
+const AnimatedNumbers = ({ value }: { value: number }) => {
+  const ref = useRef<HTMLSpanElement | null>(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    if (isInView && value !== null) {
+    if (isInView) {
       motionValue.set(value);
     }
   }, [isInView, value, motionValue]);
