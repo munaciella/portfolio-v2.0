@@ -9,7 +9,7 @@ import React, { useEffect, useRef } from 'react';
 import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
-const AnimatedNumbers = ({ value }: { value: number }) => {
+const AnimatedNumbers = ({ value }: { value: number } | null) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
@@ -23,7 +23,7 @@ const AnimatedNumbers = ({ value }: { value: number }) => {
 
   useEffect(() => {
     springValue.on('change', (latest) => {
-      if (ref.current && latest.toFixed(0) <= value) {
+      if (ref.current && Number(latest.toFixed(0)) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
     });
