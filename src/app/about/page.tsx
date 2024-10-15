@@ -9,7 +9,7 @@ import React, { useEffect, useRef } from 'react';
 import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
-const AnimatedNumbers = ({ value }: { value: number } | null) => {
+const AnimatedNumbers = ({ value }: { value: number }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
