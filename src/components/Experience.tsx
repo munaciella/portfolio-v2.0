@@ -2,27 +2,27 @@ import React, { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
-interface DetailsProps {
-  position: string;
-  company: string;
-  companyLink: string;
-  time: string;
-  address: string;
-  work: string;
-}
-
-const Details: React.FC<DetailsProps> = ({
+const Details = ({
   position,
   company,
   companyLink,
   time,
   address,
   work,
+}: {
+  position: string;
+  company: string;
+  companyLink: string;
+  time: string;
+  address: string;
+  work: string;
 }) => {
-  const ref = useRef<HTMLLIElement | null>(null);
-
+  const ref = useRef<HTMLLIElement>(null); // Use HTMLLIElement for the li
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+    >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -31,7 +31,7 @@ const Details: React.FC<DetailsProps> = ({
       >
         <h3 className="capitalize text-2xl font-bold">
           {position}&nbsp;
-          <a href={companyLink} target="_blank" rel="noopener noreferrer" className="text-primary capitalize">
+          <a href={companyLink} target="_blank" className="text-primary">
             @{company}
           </a>
         </h3>
@@ -44,9 +44,9 @@ const Details: React.FC<DetailsProps> = ({
   );
 };
 
-const Experience: React.FC = () => {
-    const ref = useRef<HTMLElement>(null);
-    const { scrollYProgress } = useScroll({
+const Experience = () => {
+  const ref = useRef<HTMLDivElement>(null); // Use HTMLDivElement for the div
+  const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
   });
@@ -62,11 +62,11 @@ const Experience: React.FC = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
             position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            company="Tech Corp"
+            companyLink="https://techcorp.com"
+            time="2020 - Present"
+            address="San Francisco, CA"
+            work="Developed and maintained web applications using modern technologies like React and Node.js."
           />
           <Details
             position="Software Engineer"

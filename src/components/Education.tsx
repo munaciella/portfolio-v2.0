@@ -13,7 +13,7 @@ const Details = ({
   place: string;
   info: string;
 }) => {
-  const ref = useRef<HTMLLIElement>(null);  // This needs to match the `li` element
+  const ref = useRef<HTMLLIElement>(null);  
   return (
     <li
       ref={ref}
@@ -36,7 +36,7 @@ const Details = ({
 };
 
 const Education = () => {
-  const ref = useRef<HTMLDivElement>(null);  // Use HTMLDivElement for the div
+  const ref = useRef<HTMLDivElement>(null);  
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
