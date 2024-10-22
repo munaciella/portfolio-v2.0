@@ -2,7 +2,7 @@ import React, { RefObject } from 'react';
 import { motion, useScroll } from 'framer-motion';
 
 interface LiIconProps {
-  reference: RefObject<Element>;
+  reference: RefObject<HTMLElement>;
 }
 
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
@@ -22,10 +22,6 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
           className="stroke-[5px] fill-light"
           style={{
             pathLength: scrollYProgress,
-          }}
-          transition={{
-            duration: 1.5,
-            ease: 'easeInOut',
           }}
         />
         <circle cx="75" cy="50" r="10" className="animate-pulse stroke-1 fill-primary" />

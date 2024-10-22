@@ -34,8 +34,8 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
 };
 
 const Education: React.FC = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
+    const ref = useRef<HTMLElement>(null);
+    const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
   });

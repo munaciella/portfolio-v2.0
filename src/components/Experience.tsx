@@ -45,8 +45,8 @@ const Details: React.FC<DetailsProps> = ({
 };
 
 const Experience: React.FC = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
+    const ref = useRef<HTMLElement>(null);
+    const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
   });
