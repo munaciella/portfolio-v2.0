@@ -9,6 +9,8 @@ import React, { useEffect, useRef } from 'react';
 import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 const AnimatedNumbers = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement | null>(null);
@@ -78,6 +80,7 @@ const AboutPage: NextPage = () => {
                 src={profilePic}
                 alt="Francesco Dev"
                 className="w-full h-auto rounded-2xl"
+                priority
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
@@ -109,6 +112,8 @@ const AboutPage: NextPage = () => {
           </div>
 
           <Skills />
+          <Experience />
+          <Education />
         </Profile>
       </main>
     </>
