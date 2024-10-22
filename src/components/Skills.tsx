@@ -138,7 +138,7 @@ const Skills = () => (
     initial="hidden"
     animate="visible"
   >
-    <h2 className="text-8xl mt-32 font-bold text-center mb-8">Skills</h2>
+    <h2 className="text-8xl mt-28 font-bold text-center mb-8">Skills</h2>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {skillsData.map((skill, index) => (
         <SkillCard key={index} name={skill.name} Icon={skill.icon} />
