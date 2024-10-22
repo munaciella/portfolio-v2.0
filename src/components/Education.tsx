@@ -2,16 +2,18 @@ import React, { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
-interface DetailsProps {
+const Details = ({
+  type,
+  time,
+  place,
+  info,
+}: {
   type: string;
   time: string;
   place: string;
   info: string;
-}
-
-const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
-  const ref = useRef<HTMLLIElement | null>(null);
-  
+}) => {
+  const ref = useRef<HTMLLIElement>(null);  // This needs to match the `li` element
   return (
     <li
       ref={ref}
@@ -33,9 +35,9 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
   );
 };
 
-const Education: React.FC = () => {
-    const ref = useRef<HTMLElement>(null);
-    const { scrollYProgress } = useScroll({
+const Education = () => {
+  const ref = useRef<HTMLDivElement>(null);  // Use HTMLDivElement for the div
+  const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
   });
