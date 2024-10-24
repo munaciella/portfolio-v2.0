@@ -5,6 +5,7 @@ import Profile from '@/components/Profile';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import project1 from '../../../public/images/projects/crypto-screener-cover-image.jpg';
@@ -19,7 +20,7 @@ const FeaturedProject = ({
 }: {
   type: string;
   title: string;
-  img: string;
+  img: StaticImageData;
   summary: string;
   link: string;
   github: string;
@@ -72,7 +73,7 @@ const Project = ({
 }: {
   type: string;
   title: string;
-  img: string;
+  img: StaticImageData;
   link: string;
   github: string;
 }) => {
