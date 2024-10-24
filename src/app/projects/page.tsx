@@ -142,9 +142,6 @@ const ProjectPage: NextPage = () => {
             <Project
                 title="Crypto Screener Application"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -154,9 +151,6 @@ const ProjectPage: NextPage = () => {
             <Project
                 title="Crypto Screener Application"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -179,9 +173,6 @@ const ProjectPage: NextPage = () => {
             <Project
                 title="Crypto Screener Application"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -191,9 +182,6 @@ const ProjectPage: NextPage = () => {
             <Project
                 title="Crypto Screener Application"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
                 link="/"
                 github="/"
                 type="Featured Project"
