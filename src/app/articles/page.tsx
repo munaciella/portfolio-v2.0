@@ -39,7 +39,9 @@ const MovingImg = ({
     y.set(-10);
   };
   const handleMouseLeave = () => {
+    if (imgRef.current) {
     imgRef.current.style.display = 'none';
+    }
     x.set(0);
     y.set(0);
   };
