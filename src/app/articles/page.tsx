@@ -32,7 +32,9 @@ const MovingImg = ({
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   const handleMouse = (event: React.MouseEvent) => {
+    if (imgRef.current) {
     imgRef.current.style.display = 'inline-block';
+    }
     x.set(event.pageX);
     y.set(-10);
   };
