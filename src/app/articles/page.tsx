@@ -159,9 +159,9 @@ const ArticlesPage: NextPage = () => {
             <LatestArticle
               title="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
               summary="Learn how to create stunning loading screens in React with 3 different methods. 
-Discover how to use React-Loading, React-Lottie & build a custom loading screen to improve the user experience."
+Discover how to use React-Loading & build a custom loading screen to improve the user experience."
               time="10 min read"
-              link="https://www.freecodecamp.org/news/creating-stunning-loading-screens-in-react/"
+              link="https://dev.to/codebucks/create-3-different-types-of-loading-screens-in-react-5bba"
               img={article2}
             />
           </ul>
@@ -172,37 +172,37 @@ Discover how to use React-Loading, React-Lottie & build a custom loading screen 
             <Article
               title="Form Validation In React: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/form-validation-in-react-build-a-custom-hook-for-inputs-and-error-handling/"
+              link="https://www.freecodecamp.org/news/add-form-validation-in-react-app-with-react-hook-form/"
               img={article3}
             />
             <Article
               title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
               date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/silky-smooth-scrolling-in-reactjs-a-step-by-step-guide-for-react-developers/"
+              link="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior"
               img={article4}
             />
             <Article
-              title="Creating An Efficient Modal Component In React Using Hooks And Portals"
+              title="Creating An Efficient Modal Component In React Using Hooks & Portals"
               date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/creating-an-efficient-modal-component-in-react-using-hooks-and-portals/"
+              link="https://react.dev/reference/react-dom/createPortal"
               img={article5}
             />
             <Article
-              title="Build A Fabulous Todo List App With React, Redux And Framer-Motion"
-              date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/build-a-fabulous-todo-list-app-with-react-redux-and-framer-motion/"
+              title="Build A Fabulous Todo List App With React & Redux"
+              date="April 12, 2024"
+              link="https://www.freecodecamp.org/news/build-a-todo-app-from-scratch-with-reactjs/"
               img={article6}
             />
             <Article
               title="Redux Simplified: A Beginner's Guide For Web Developers"
               date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/redux-simplified-a-beginners-guide-for-web-developers/"
+              link="https://redux.js.org/tutorials/fundamentals/part-1-overview"
               img={article7}
             />
             <Article
               title="What Is Higher Order Component(Hoc) In React?"
               date="March 22, 2023"
-              link="https://www.freecodecamp.org/news/what-is-higher-order-component-hoc-in-react/"
+              link="https://medium.com/@ashaymotiwala/higher-order-functions-components-in-react-js-a93dce5f30cb"
               img={article8}
             />
           </ul>
