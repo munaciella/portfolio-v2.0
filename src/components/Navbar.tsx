@@ -4,8 +4,16 @@ import Link from 'next/link';
 import React, { FC } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
-import { DribbbleIcon, GithubIcon, LinkedInIcon, XIcon } from './Icons';
+import {
+  DribbbleIcon,
+  GithubIcon,
+  LinkedInIcon,
+  MoonIcon,
+  SunIcon,
+  XIcon,
+} from './Icons';
 import { motion } from 'framer-motion';
+import useThemeSwitcher from '@/hooks/useThemeSwitcher';
 
 const CustomLink = ({
   href,
@@ -23,7 +31,7 @@ const CustomLink = ({
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           pathname === href ? 'w-full' : 'w-0'
-        }`}
+        } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -32,8 +40,10 @@ const CustomLink = ({
 };
 
 const Navbar: FC = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
-    <header className="w-full px-32 py-8 mt-2 font-semibold text-lg flex items-center justify-between">
+    <header className="w-full px-32 py-8 mt-2 font-semibold text-lg flex items-center justify-between dark:text-light">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -78,6 +88,17 @@ const Navbar: FC = () => {
         >
           <DribbbleIcon className="w-8 h-8 fill-dark" />
         </motion.a>
+        <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+        className={`ml-4 flex items-center justify-center rounded-full p-1
+          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+          `} 
+          >
+          {mode === 'dark' ? (
+            <SunIcon className={'fill-dark'} />
+          ) : (
+            <MoonIcon className={'fill-dark'} />
+          )}
+        </button>
       </nav>
       <div className="absolute left-1/2 top-2 -translate-x-1/2 mt-1">
         <Logo />

@@ -85,10 +85,10 @@ const Article = ({
     //   initial={{ y: 200 }}
     //   whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
     //   viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
     </li>
   );
 };
@@ -107,7 +107,7 @@ const LatestArticle = ({
   link: string;
 }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
@@ -128,7 +128,7 @@ const LatestArticle = ({
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
     </li>
   );
 };
@@ -140,10 +140,10 @@ const ArticlesPage: NextPage = () => {
         <title>Francesco Dev | Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Profile className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16" />
-          <p className="text-5xl font-bold w-full text-center my-16 mt-4">
+          <p className="text-5xl font-bold w-full text-center my-16 mt-4 dark:text-light">
             Latest Articles
             </p>
           <ul className="grid grid-cols-2 gap-16">
@@ -165,7 +165,7 @@ Discover how to use React-Loading & build a custom loading screen to improve the
               img={article2}
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
             More Articles
           </h2>
           <ul>
