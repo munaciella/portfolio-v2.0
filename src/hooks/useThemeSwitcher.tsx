@@ -52,17 +52,17 @@
 
 // export default useThemeSwitcher;
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
-const useThemeSwitcher = () => {
+const useThemeSwitcher = (): [string, Dispatch<SetStateAction<string>>] => {
   const preferDarkQuery = '(prefers-color-scheme: dark)';
-  const [mode, setMode] = useState(() => {
+  const [mode, setMode] = useState<string>(() => {
     return window.localStorage.getItem('theme') || 'light';
   });
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkQuery);
-    const handleChange = (e) => {
+    const handleChange = (e: MediaQueryListEvent) => {
       const newMode = e.matches ? 'dark' : 'light';
       setMode(newMode);
     };
