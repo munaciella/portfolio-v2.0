@@ -5,7 +5,6 @@ import React, { FC } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import {
-  DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
@@ -79,7 +78,7 @@ const Navbar: FC = () => {
         >
           <LinkedInIcon className="w-8 h-8 fill-dark" />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           href="https://dribbble.com/"
           target={'_blank'}
           whileHover={{ y: -2 }}
@@ -87,7 +86,7 @@ const Navbar: FC = () => {
           className="w-6 ml-3"
         >
           <DribbbleIcon className="w-8 h-8 fill-dark" />
-        </motion.a>
+        </motion.a> */}
         <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
         className={`ml-4 flex items-center justify-center rounded-full p-1
           ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
