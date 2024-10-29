@@ -81,9 +81,10 @@ const AboutPage: NextPage = () => {
                 alt="Francesco Dev"
                 className="w-full h-auto rounded-2xl"
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between">
+            <div className="col-span-2 flex flex-col items-end justify-center space-y-16">
               {/* <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={10} />+
@@ -93,7 +94,7 @@ const AboutPage: NextPage = () => {
                 </h2>
               </div> */}
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-6xl font-bold">
                   <AnimatedNumbers value={10} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
@@ -101,7 +102,7 @@ const AboutPage: NextPage = () => {
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-6xl font-bold">
                   <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
