@@ -9,15 +9,21 @@ const Footer = () => {
       <Layout className="py-8 flex items-center justify-between">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex items-center">
-          Made With <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>
+          Made With{' '}
+          <span className="text-primary dark:text-primaryDark text-2xl px-1">
+            &#9825;
+          </span>
           by &nbsp;
           <Link href="https://github.com/munaciella" target={'_blank'}>
             <Image
               className="ml-0"
               src="/FranIcon.png"
               alt="Francesco's Image"
-              width={28}
-              height={28}
+              width={8}
+              height={10}
+              priority
+              className="ml-0 w-8 h-10 rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </Link>
         </div>

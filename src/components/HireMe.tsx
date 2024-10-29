@@ -1,23 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import circleTextLight from '../../public/images/Web_Developer_Software_Engineer-transformed.png';
-import circleTextDark from '../../public/images/Web_Developer_Software_Engineer-removebg-white.png';
-import useThemeSwitcher from '../hooks/useThemeSwitcher';
+import circleText from '../../public/images/circular-text.png';
 
 const HireMe = () => {
-  const [mode] = useThemeSwitcher();
-
-  const imageSrc = mode === 'dark' ? circleTextDark : circleTextLight;
 
   return (
     <div className='absolute left-4 bottom-4 flex items-center justify-center overflow-hidden'>
       <div className='w-48 h-auto flex items-center justify-center relative'>
         <Image 
-          src={imageSrc}
-          alt='Francesco Dev Circular Text' 
+          src={circleText}
+          alt='Francesco Dev Circular Text'
+          width={500}
+          height={500} 
           className='animate-spin-slow' 
-          priority
+          priority 
         />
         <Link 
           href="mailto:francesco.vurchio82@gmail.com" 

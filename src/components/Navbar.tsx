@@ -1,18 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import {
   GithubIcon,
   LinkedInIcon,
-  MoonIcon,
-  SunIcon,
+  // MoonIcon,
+  // SunIcon,
   XIcon,
 } from './Icons';
 import { motion } from 'framer-motion';
-import useThemeSwitcher from '@/hooks/useThemeSwitcher';
+import useThemeSwitcher from '../hooks/useThemeSwitcher';
 
 const CustomLink = ({
   href,
@@ -40,6 +40,13 @@ const CustomLink = ({
 
 const Navbar: FC = () => {
   const [mode, setMode] = useThemeSwitcher();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true); // Set mounted to true after client-side rendering
+  }, []);
+
+  if (!mounted) return null; // Skip rendering until client-side
 
   return (
     <header className="w-full px-32 py-8 mt-2 font-semibold text-lg flex items-center justify-between dark:text-light">
@@ -78,24 +85,37 @@ const Navbar: FC = () => {
         >
           <LinkedInIcon className="w-8 h-8 fill-dark" />
         </motion.a>
-        {/* <motion.a
-          href="https://dribbble.com/"
-          target={'_blank'}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3"
-        >
-          <DribbbleIcon className="w-8 h-8 fill-dark" />
-        </motion.a> */}
+        
         <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-        className={`ml-4 flex items-center justify-center rounded-full p-1
-          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+        className={`ml-4 flex items-center justify-center rounded-full p-1 transition-all duration-300 transform
+          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'
+          } ${mode === 'light' ? 'rotate-0' : 'rotate-180'}
           `} 
           >
           {mode === 'dark' ? (
-            <SunIcon className={'fill-dark'} />
+            /* Sun Icon */
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                d="M12 3V1m6.36 4.64l1.42-1.42M21 12h2M17.66 19.36l-1.42 1.42M12 21v2m-6.36-4.64l-1.42 1.42M3 12H1m4.64-6.36L4.22 4.22"
+                className="stroke-current"
+              />
+              <circle cx="12" cy="12" r="5" fill="currentColor" />
+            </svg>
           ) : (
-            <MoonIcon className={'fill-dark'} />
+            /* Moon Icon */
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7.5 7.5 0 1021 12.79z" />
+            </svg>
           )}
         </button>
       </nav>
