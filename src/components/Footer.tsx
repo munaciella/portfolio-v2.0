@@ -16,7 +16,6 @@ const Footer = () => {
           by &nbsp;
           <Link href="https://github.com/munaciella" target={'_blank'}>
             <Image
-              className="ml-0"
               src="/FranIcon.png"
               alt="Francesco's Image"
               width={8}
