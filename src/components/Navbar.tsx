@@ -54,7 +54,7 @@ const CustomMobileLink = ({
   };
 
   return (
-    <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
+    <button className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
       {title}
       <span
         className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
