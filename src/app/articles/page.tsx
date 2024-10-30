@@ -16,7 +16,7 @@ import article7 from '../../../public/images/articles/What is Redux with easy ex
 import article8 from '../../../public/images/articles/What is higher order component in React.jpg';
 import { motion, useMotionValue } from 'framer-motion';
 
-const FramerImage = motion(Image);
+const FramerImage = motion.create(Image);
 
 const MovingImg = ({
   title,

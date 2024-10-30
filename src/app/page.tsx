@@ -13,7 +13,7 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 const HomePage: NextPage = () => {
   return (
     <>
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
         <Profile className="pt-2">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
