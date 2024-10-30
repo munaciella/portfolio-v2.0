@@ -4,13 +4,7 @@ import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
-import {
-  GithubIcon,
-  LinkedInIcon,
-  // MoonIcon,
-  // SunIcon,
-  XIcon,
-} from './Icons';
+import { GithubIcon, LinkedInIcon, XIcon } from './Icons';
 import { motion } from 'framer-motion';
 import useThemeSwitcher from '../hooks/useThemeSwitcher';
 
@@ -43,10 +37,10 @@ const Navbar: FC = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true); // Set mounted to true after client-side rendering
+    setMounted(true);
   }, []);
 
-  if (!mounted) return null; // Skip rendering until client-side
+  if (!mounted) return null;
 
   return (
     <header className="w-full px-32 py-8 mt-2 font-semibold text-lg flex items-center justify-between dark:text-light">
@@ -85,26 +79,31 @@ const Navbar: FC = () => {
         >
           <LinkedInIcon className="w-8 h-8 fill-dark" />
         </motion.a>
-        
-        <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-        className={`ml-4 flex items-center justify-center rounded-full p-1 transition-all duration-300 transform
-          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'
-          } ${mode === 'light' ? 'rotate-0' : 'rotate-180'}
-          `} 
-          >
+
+        <button
+          onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+          className={`ml-4 flex items-center justify-center rounded-full p-1 transition-all duration-300 transform
+          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'} ${
+            mode === 'light' ? 'rotate-0' : 'rotate-180'
+          }
+          `}
+        >
           {mode === 'dark' ? (
             /* Sun Icon */
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 transition-transform duration-300 ease-in-out transform rotate-0 dark:rotate-180"
             >
-              <path
-                d="M12 3V1m6.36 4.64l1.42-1.42M21 12h2M17.66 19.36l-1.42 1.42M12 21v2m-6.36-4.64l-1.42 1.42M3 12H1m4.64-6.36L4.22 4.22"
-                className="stroke-current"
-              />
               <circle cx="12" cy="12" r="5" fill="currentColor" />
+              <path
+                d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                className="transition-colors duration-300"
+              />
             </svg>
           ) : (
             /* Moon Icon */

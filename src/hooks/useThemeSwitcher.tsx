@@ -75,7 +75,6 @@ const useThemeSwitcher = (): [string, Dispatch<SetStateAction<string>>] => {
         setMode(newMode);
       };
 
-      // Set the initial theme based on saved theme or system preference
       const savedTheme = window.localStorage.getItem('theme');
       if (savedTheme) {
         setMode(savedTheme);
@@ -84,10 +83,8 @@ const useThemeSwitcher = (): [string, Dispatch<SetStateAction<string>>] => {
         setMode(currentTheme);
       }
 
-      // Add media query listener
       mediaQuery.addEventListener('change', handleChange);
       
-      // Cleanup listener on component unmount
       return () => mediaQuery.removeEventListener('change', handleChange);
     }
   }, []);
@@ -97,7 +94,7 @@ const useThemeSwitcher = (): [string, Dispatch<SetStateAction<string>>] => {
       window.localStorage.setItem('theme', mode);
       document.documentElement.classList.toggle('dark', mode === 'dark');
     }
-  }, [mode]); // This runs every time mode changes
+  }, [mode]);
 
   return [mode, setMode];
 };
