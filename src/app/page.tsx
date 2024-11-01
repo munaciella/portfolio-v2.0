@@ -58,7 +58,7 @@ const HomePage: NextPage = () => {
         </Profile>
 
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden lg:hidden">
+        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden lg:hidden xl:w-16">
           <Image
             src={lightBulb}
             alt="Francesco Dev"

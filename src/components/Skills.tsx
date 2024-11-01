@@ -85,8 +85,8 @@ const Skills = () => (
     initial="hidden"
     animate="visible"
   >
-    <h2 className="text-8xl mt-28 font-bold text-center mb-8">Skills</h2>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <h2 className="text-8xl mt-28 font-bold text-center mb-8 md:text-6xl lg:text-7xl sm:text-6xl xs:text-4xl sm:mt-16">Skills</h2>
+    <div className="grid grid-cols-6 2xl:grid-cols-6 xl:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-8">
       {skillsData.map((skill, index) => (
         <SkillCard key={index} name={skill.name} Icon={skill.icon} />
       ))}
