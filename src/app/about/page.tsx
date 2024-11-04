@@ -123,3 +123,4 @@ const AboutPage: NextPage = () => {
   );
 };
 export default AboutPage;
+//lg:flex-col line 33 projects page

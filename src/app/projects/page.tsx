@@ -9,6 +9,7 @@ import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import project1 from '../../../public/images/projects/crypto-screener-cover-image.jpg';
+import project2 from '../../../public/images/projects/Black White and Red Modern Breaking News Channel Logo.png';
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -29,12 +30,12 @@ const FeaturedProject = ({
   github: string;
 }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-8 dark:border-light dark:bg-dark dark:text-light lg:flex-col lg:p-7 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-8 dark:border-light dark:bg-dark dark:text-light md:flex-col lg:p-4 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
         <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl sm:-right-2 sm:h-[101.5%] sm:w-full sm:rounded-[1.5rem] xs:-right-2 xs:h-[101.5%] xs:w-full xs:rounded-[1.5rem] md:-right-2 md:h-[101.5%] md:w-full md:rounded-[1.5rem] lg:h-[101.5%] lg:-right-2 xl:-right-3" />
       <Link
         href={link}
         target={'_blank'}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        className="w-1/2 h-auto 2xl:h-96 xl:h-96 lg:h-auto md:h-96 sm:h-64 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage src={img} alt={title} className="w-full h-auto" 
         whileHover={{ scale: 1.05 }}
@@ -43,7 +44,7 @@ const FeaturedProject = ({
         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-4 lg:pt-6 md:pl-0 md:pb-4">
         <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">{type}</span>
         <Link
           href={link}
@@ -156,7 +157,7 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-12">
             <FeaturedProject
                 title="Crypto Screener Application"
-                img={project1}
+                img={project2}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
             It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
             local currency."

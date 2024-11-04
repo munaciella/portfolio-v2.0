@@ -63,7 +63,7 @@ const MovingImg = ({
         ref={imgRef}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
@@ -85,10 +85,10 @@ const Article = ({
     //   initial={{ y: 200 }}
     //   whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
     //   viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4"
+      className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4 sm:flex-col"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">{date}</span>
     </li>
   );
 };
@@ -125,11 +125,11 @@ const LatestArticle = ({
         />
       </Link>
       <Link href={link} target={'_blank'}>
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
+      <p className="text-sm mb-2 sm:hidden">{summary}</p>
       <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
     </li>
   );
@@ -143,12 +143,12 @@ const ArticlesPage: NextPage = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden dark:text-light">
-        <Profile className="pt-16">
-          <AnimatedText text="Words Can Change The World!" className="mb-16" />
-          <p className="text-5xl font-bold w-full text-center my-16 mt-4 dark:text-light">
+        <Profile className="pt-14">
+          <AnimatedText text="Words Can Change The World!" className="mb-16 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 xl:!text-6xl lg:!text-6xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
+          <p className="text-6xl font-bold w-full text-center my-16 mt-4 dark:text-light xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl">
             Latest Articles
             </p>
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16 sm:gap-y-16 sm:grid-cols-1 xs:grid-cols-1 xs:gap-y-8">
             <LatestArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
@@ -167,7 +167,7 @@ Discover how to use React-Loading & build a custom loading screen to improve the
               img={article2}
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
+          <h2 className="font-bold text-5xl w-full text-center my-16 mt-20 dark:text-light lg:text-4xl sm:text-3xl xs:text-3xl">
             More Articles
           </h2>
           <ul>
