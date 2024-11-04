@@ -9,6 +9,7 @@ import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import project1 from '../../../public/images/projects/crypto-screener-cover-image.jpg';
+import project2 from '../../../public/images/projects/Black White and Red Modern Breaking News Channel Logo.png';
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -34,7 +35,7 @@ const FeaturedProject = ({
       <Link
         href={link}
         target={'_blank'}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        className="w-1/2 h-auto 2xl:h-96 xl:h-96 lg:h-auto cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage src={img} alt={title} className="w-full h-auto" 
         whileHover={{ scale: 1.05 }}
@@ -156,7 +157,9 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-12">
             <FeaturedProject
                 title="Crypto Screener Application"
-                img={project1}
+                img={project2}
+                width={100}
+                height={100}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
             It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
             local currency."
