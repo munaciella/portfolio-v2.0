@@ -11,6 +11,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimatedNumbers = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement | null>(null);
@@ -44,7 +45,9 @@ const AboutPage: NextPage = () => {
         <title>Francesco Dev | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex flex-col items-center justify-center w-full dark:text-light">
+      <TransitionEffect />
+      <main className="flex flex-col items-center justify-center w-full dark:text-light"
+      >
         <Profile className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xs:mb-8" />
 

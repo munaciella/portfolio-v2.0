@@ -11,6 +11,7 @@ import React from 'react';
 import project1 from '../../../public/images/projects/crypto-screener-cover-image.jpg';
 import project2 from '../../../public/images/projects/Black White and Red Modern Breaking News Channel Logo.png';
 import { motion } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -134,6 +135,7 @@ const ProjectPage: NextPage = () => {
         <title>Francesco Dev | Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Profile className="pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className="mb-8 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
