@@ -15,7 +15,6 @@ import article6 from '../../../public/images/articles/todo list app built using 
 import article7 from '../../../public/images/articles/What is Redux with easy explanation.png';
 import article8 from '../../../public/images/articles/What is higher order component in React.jpg';
 import { motion, useMotionValue } from 'framer-motion';
-import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion.create(Image);
 
@@ -83,9 +82,6 @@ const Article = ({
 }) => {
   return (
     <li
-    //   initial={{ y: 200 }}
-    //   whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-    //   viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4 sm:flex-col"
     >
       <MovingImg title={title} img={img} link={link} />
@@ -143,7 +139,6 @@ const ArticlesPage: NextPage = () => {
         <title>Francesco Dev | Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <TransitionEffect />
       <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Profile className="pt-14">
           <AnimatedText text="Words Can Change The World!" className="mb-16 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 xl:!text-6xl lg:!text-6xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
