@@ -50,8 +50,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
         <Navbar />
         <AnimatePresence mode='wait' onExitComplete={() => window.scrollTo(0, 0)}>
-          <TransitionEffect key={router.asPath} />
-          <motion.div key={router.asPath} initial="initial" animate="animate" exit="exit">
+          <TransitionEffect key={router.pathname} />
+          <motion.div key={router.pathname} initial="initial" animate="animate" exit="exit">
           {children}
           </motion.div>
         </AnimatePresence>
