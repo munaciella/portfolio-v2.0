@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
@@ -46,10 +46,15 @@ const Details = ({
 
 const Experience = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [isMounted, setIsMounted] = useState(false);
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: isMounted ? ref: undefined,
     offset: ['start end', 'center start'],
   });
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="my-28">

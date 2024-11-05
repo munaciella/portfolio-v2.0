@@ -5,13 +5,12 @@ import Profile from '@/components/Profile';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
-import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimatedNumbers = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement | null>(null);
@@ -19,7 +18,7 @@ const AnimatedNumbers = ({ value }: { value: number }) => {
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isInView) {
       motionValue.set(value);
     }
@@ -45,7 +44,6 @@ const AboutPage: NextPage = () => {
         <title>Francesco Dev | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <TransitionEffect />
       <main className="flex flex-col items-center justify-center w-full dark:text-light"
       >
         <Profile className="pt-16">
