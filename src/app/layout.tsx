@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import TransitionEffect from '@/components/TransitionEffect';
 
 const montserrat = Montserrat({
@@ -30,7 +30,7 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const router = useRouter();
+  const pathname = usePathname();
   return (
     <html lang="en">
       <body
@@ -50,8 +50,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
         <Navbar />
         <AnimatePresence mode='wait' onExitComplete={() => window.scrollTo(0, 0)}>
-          <TransitionEffect key={router.pathname} />
-          <motion.div key={router.pathname} initial="initial" animate="animate" exit="exit">
+          <TransitionEffect key={pathname} />
+          <motion.div key={pathname} initial="initial" animate="animate" exit="exit">
           {children}
           </motion.div>
         </AnimatePresence>
