@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 import React from 'react';
 import Image from 'next/image';
@@ -27,14 +28,11 @@ const HomePage: NextPage = () => {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
+                text="Transforming Vision Into Reality Through Code And Design."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-lg font-medium md:text-sm sm:text-sm">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+              I’m a junior software developer with a passion for front-end development and a solid foundation in full-stack skills. As a trained software engineer, I’ve built innovative web applications that blend user-centered design with efficient functionality. Check out my recent projects to see my expertise in React.js and web development come to life.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
