@@ -12,7 +12,7 @@ import project1 from '../../../public/images/projects/Eventsphere.jpg';
 import project2 from '../../../public/images/projects/Wax.png';
 import project3 from '../../../public/images/projects/Munaciella-news.jpg';
 import project4 from '../../../public/images/projects/Currency-converter.jpg'
-import project5 from '../../../public/images/projects/VeloVegans.jpg'
+import project5 from '../../../public/images/projects/Velovegans.jpg'
 import { motion } from 'framer-motion';
 
 const FramerImage = motion.create(Image);
