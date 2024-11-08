@@ -8,8 +8,11 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import project1 from '../../../public/images/projects/crypto-screener-cover-image.jpg';
-import project2 from '../../../public/images/projects/Black White and Red Modern Breaking News Channel Logo.png';
+import project1 from '../../../public/images/projects/Eventsphere.jpg';
+import project2 from '../../../public/images/projects/Wax.png';
+import project3 from '../../../public/images/projects/Munaciella-news.jpg';
+import project4 from '../../../public/images/projects/Currency-converter.jpg'
+import project5 from '../../../public/images/projects/Velovegans.jpg'
 import { motion } from 'framer-motion';
 
 const FramerImage = motion.create(Image);
@@ -194,7 +197,7 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
-                img={project1}
+                img={project3}
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -203,7 +206,7 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
-                img={project1}
+                img={project4}
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -213,7 +216,7 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
-                img={project1}
+                img={project5}
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -222,7 +225,7 @@ const ProjectPage: NextPage = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
-                img={project1}
+                img={project4}
                 link="/"
                 github="/"
                 type="Featured Project"
