@@ -170,37 +170,37 @@ Discover how to use React-Loading & build a custom loading screen to improve the
           <ul>
             <Article
               title="Form Validation In React: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="March 22, 2023"
+              date="October 22, 2024"
               link="https://www.freecodecamp.org/news/add-form-validation-in-react-app-with-react-hook-form/"
               img={article3}
             />
             <Article
               title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
-              date="March 22, 2023"
+              date="October 01, 2024"
               link="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior"
               img={article4}
             />
             <Article
               title="Creating An Efficient Modal Component In React Using Hooks & Portals"
-              date="March 22, 2023"
+              date="October 03, 2024"
               link="https://react.dev/reference/react-dom/createPortal"
               img={article5}
             />
             <Article
               title="Build A Fabulous Todo List App With React & Redux"
-              date="April 12, 2024"
+              date="October 12, 2024"
               link="https://www.freecodecamp.org/news/build-a-todo-app-from-scratch-with-reactjs/"
               img={article6}
             />
             <Article
               title="Redux Simplified: A Beginner's Guide For Web Developers"
-              date="March 22, 2023"
+              date="November 02, 2024"
               link="https://redux.js.org/tutorials/fundamentals/part-1-overview"
               img={article7}
             />
             <Article
               title="What Is Higher Order Component(Hoc) In React?"
-              date="March 22, 2023"
+              date="November 05, 2023"
               link="https://medium.com/@ashaymotiwala/higher-order-functions-components-in-react-js-a93dce5f30cb"
               img={article8}
             />
