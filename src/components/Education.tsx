@@ -65,13 +65,14 @@ const Education = () => {
           <Details
             type="Strength and Conditioning Coaching Certification"
             time="2019 - 2021"
-            place="Strengthh and Conditioning Education"
+            place="Strength and Conditioning Education"
             info="Completed coursework in advanced topics such as Strength and Conditioning, Sports Nutrition, and Sports Psychology."
           />
           <Details
             type="Diploma in Fitness Instructing and Personal Training"
             time="2018 - 2018"
-            place="Completed level 3 diploma in fitness instructing and personal training, including anatomy, physiology, and exercise prescription."
+            place='ActiveIQ, UK'
+            info="Completed level 3 diploma in fitness instructing and personal training, including anatomy, physiology, and exercise prescription."
           />
           <Details
             type="Online Coursework"
