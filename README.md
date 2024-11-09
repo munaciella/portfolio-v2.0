@@ -1,42 +1,92 @@
-# Next.Js Website Tutorial: Create a Stunning Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+Here’s a README outline based on your project’s features and goals:
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+---
 
-This repository contains starter code for Portfolio website created using NextJs. <br />
+# My Portfolio Project
 
-For Demo and Final Code checkout following link👇: <br />
-[Nextjs Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion#code-links) <br />
+Welcome to my portfolio project! This application showcases my skills, experience, and projects as a junior software developer. It’s built with modern technologies and designed to provide an engaging, responsive user experience.
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/Yw7yWHigGKI <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/Yw7yWHigGKI?style=social)](https://youtu.be/Yw7yWHigGKI)<br />
+**Live Demo**: [Francesco.dev](https://francesco-dev.vercel.app/)
 
-### Images of The Portfolio Website:
+---
 
-![Nextjs Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-light-desktop.png)
-![Nextjs Portfolio Website Dark Mode](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-dark-desktop.png)
-![Next.js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-desktop.png)
-![Next js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-dark-desktop.png)
-![Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-desktop.png)
-![Responsive Portfolio Website In Nextjs](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-mobile.png)
-![Responsive Portfolio Website In Next js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-light-mobile.png)
-![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+## 🛠️ Project Overview
 
+This portfolio is a full-stack application designed to highlight my work, skills, and background as a developer with a focus on front-end technologies. It provides a sleek interface for showcasing projects, education, and experience with smooth animations and interactions.
 
-### Resources Used in This Project
+### Key Features
 
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
-- LightBulb Svg from https://lukaszadam.com/illustrations <br />
+- **Responsive Design**: Optimized layout for seamless viewing across devices, with tailored layouts for mobile, tablet, and desktop.
+- **Light/Dark Theme**: Users can toggle between light and dark modes for a customized viewing experience.
+- **Framer Motion Animations**: Includes subtle animations for a dynamic feel, such as scrolling effects and hover interactions.
+- **Modular Components**: Each section is a reusable, modular component to keep the code clean, efficient, and scalable.
 
-### External Libraries used in this project:
+## 📜 Sections
 
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
+### 1. **Home Page**
+   - **Intro Text**: “Turning Vision Into Reality With Code And Design.”
+   - **Summary**: Brief introduction to my skills as a full-stack developer focused on front-end development, backed by hands-on experience through projects and articles.
 
+### 2. **Experience Section**
+   - Uses a timeline layout to present work history.
+   - Each entry highlights the position, company, and responsibilities, with links to company sites.
 
+### 3. **Education Section**
+   - Includes academic background and relevant coursework.
+   - Additional certifications and online courses are also listed.
+
+### 4. **Projects Page**
+   - Features a curated selection of projects with descriptions, tech stacks, and links to live demos or code repositories.
+   - Project cards utilize animations for visual appeal and are built to emphasize my skills in React.js and Next.js.
+
+### 5. **Skills Section**
+   - Displayed as an icon grid, organized to adapt based on screen size.
+   - Icons include primary skills like React.js, Node.js, and CSS frameworks.
+
+## ⚙️ Technology Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Animations**: Framer Motion for scroll and hover effects
+- **Deployment**: Vercel
+
+## 🎨 Design Considerations
+
+- **UI/UX**: Designed with user-centered principles for easy navigation and readability.
+- **Accessibility**: Dark and light themes, responsive design, and contrast-optimized colors to support readability for all users.
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/munaciella/portfolio-v2.0
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view it locally.
+
+## 🌟 Future Enhancements
+
+- **CMS Integration**: To manage portfolio content dynamically.
+- **Blog Section**: A blog to share insights, tutorials, and industry experiences.
+- **More Animations**: Enhance interactivity and user engagement with additional animations.
+
+---
+
+## 🙋 About Me
+
+I’m Francesco Vurchio, a junior software developer based in Manchester, specializing in front-end development. After completing a bootcamp as a trainee software engineer at Northcoders, I am excited to bring impactful applications to life with clean, maintainable code. Feel free to explore this portfolio and reach out!
+
+---
+
+**Thank you for visiting my portfolio!**

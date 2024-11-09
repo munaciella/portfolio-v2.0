@@ -156,7 +156,7 @@ const ProjectPage: NextPage = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Profile className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Imagination Outshines Knowledge!"
             className="mb-8 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
           />
           <p className="text-5xl font-bold w-full text-center my-16 mt-12 lg:mt-4 md:mt-4 dark:text-light lg:text-4xl sm:text-3xl xs:text-3xl">
@@ -165,26 +165,22 @@ const ProjectPage: NextPage = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 mt-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Events Platform Web Application"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
-                link="/"
-                github="/"
+                summary="A web application for managing events, including user registration, event creation, payment processing, and more. It is built with React, Vite, and Tailwind CSS, using Supabase for backend services."
+                link="https://event-sphere-web.netlify.app/"
+                github="https://github.com/munaciella/events-platform"
                 type="Featured Project"
               />
             </div>
 
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Social Media Music App"
                 img={project2}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-            local currency."
-                link="/"
-                github="/"
+                summary="A social media platform for music enthusiasts, allows users to explore, rate, and review songs and albums from around the world. The app utilises Spotify-API to interact with the backend to fetch the music information."
+                link="https://github.com/munaciella/gatefold-api"
+                github="https://github.com/munaciella/gatefold-frontend"
                 type="Featured Project"
               />
             </div>
@@ -196,29 +192,29 @@ const ProjectPage: NextPage = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="News Web Application"
                 img={project3}
-                link="/"
-                github="/"
+                link="https://munaciella-news.netlify.app/"
+                github="https://github.com/munaciella/NC-news"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="Currency Converter App"
                 img={project4}
-                link="/"
-                github="/"
+                link="https://github.com/munaciella/currency-converter"
+                github="https://github.com/munaciella/currency-converter"
                 type="Featured Project"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="Recipes Web Application"
                 img={project5}
-                link="/"
-                github="/"
+                link="https://velovegans.co.uk"
+                github="https://github.com/munaciella/recipes-website"
                 type="Featured Project"
               />
             </div>
