@@ -57,34 +57,27 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2019 - 2023"
-            place="University of California, Los Angeles"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            type="Bachelor of Science in Sport Studies"
+            time="2015 - 2021"
+            place="Open University, UK"
+            info="Studied sports coaching principles, management, sports psychology, and sports physiology. Developed skills in coaching methodologies, advanced nutrition, and strength and conditioning."
           />
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2019 - 2023"
-            place="University of California, Los Angeles"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            type="Strength and Conditioning Coaching Certification"
+            time="2019 - 2021"
+            place="Strengthh and Conditioning Education"
+            info="Completed coursework in advanced topics such as Strength and Conditioning, Sports Nutrition, and Sports Psychology."
           />
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2019 - 2023"
-            place="University of California, Los Angeles"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            type="Diploma in Fitness Instructing and Personal Training"
+            time="2018 - 2018"
+            place="Completed level 3 diploma in fitness instructing and personal training, including anatomy, physiology, and exercise prescription."
           />
           <Details
             type="Online Coursework"
-            time="2015 - 2019"
+            time="2022 - 2024"
             place="Codecademy, Udemy & EdX"
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
-          />
-          <Details
-            type="Bachelor of Science in Computer Science"
-            time="2019 - 2023"
-            place="University of California, Los Angeles"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            info="Studied topics such as HTML, CSS, JavaScript, React, Node.js, and more. Developed skills in web development and software engineering."
           />
         </ul>
       </div>
