@@ -44,10 +44,12 @@ const AboutPage: NextPage = () => {
         <title>Francesco Dev | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex flex-col items-center justify-center w-full dark:text-light"
-      >
+      <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Profile className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose!" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xs:mb-8" />
+          <AnimatedText
+            text="Passion Drives Purpose!"
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 xs:mb-8"
+          />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 sm:px-16 sm:gap-y-12">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -55,18 +57,25 @@ const AboutPage: NextPage = () => {
                 Biography
               </h2>
               <p className="font-medium">
-              Hi, I’m Francesco, a software developer passionate about crafting beautiful, functional, and user-centered digital experiences. With two years in the field, I continuously seek innovative ways to bring clients’ visions to life.
+                Hi, I’m Francesco, a software developer passionate about
+                crafting beautiful, functional, and user-centered digital
+                experiences. With two years in the field, I continuously seek
+                innovative ways to bring clients’ visions to life.
               </p>
               <p className="my-4 font-medium">
-              I believe design is more than aesthetics; it’s about solving problems and creating intuitive, enjoyable experiences for users.
+                I believe design is more than aesthetics; it’s about solving
+                problems and creating intuitive, enjoyable experiences for
+                users.
               </p>
               <p className="font-medium">
-              Whether working on a website, mobile app, or any digital product, I bring a commitment to design excellence and user-focused solutions to every project. I look forward to applying my skills and passion to your next project.
+                Whether working on a website, mobile app, or any digital
+                product, I bring a commitment to design excellence and
+                user-focused solutions to every project. I look forward to
+                applying my skills and passion to your next project.
               </p>
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-6 xs:p-4">
-
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}

@@ -33,14 +33,14 @@ const MovingImg = ({
 
   const handleMouse = (event: React.MouseEvent) => {
     if (imgRef.current) {
-    imgRef.current.style.display = 'inline-block';
+      imgRef.current.style.display = 'inline-block';
     }
     x.set(event.pageX);
     y.set(-10);
   };
   const handleMouseLeave = () => {
     if (imgRef.current) {
-    imgRef.current.style.display = 'none';
+      imgRef.current.style.display = 'none';
     }
     x.set(0);
     y.set(0);
@@ -81,11 +81,11 @@ const Article = ({
   link: string;
 }) => {
   return (
-    <li
-      className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4 sm:flex-col"
-    >
+    <li className="relative w-full p-4 py-6 my-14 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light dark:border-r-4 dark:border-b-4 sm:flex-col">
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">
+        {date}
+      </span>
     </li>
   );
 };
@@ -127,7 +127,9 @@ const LatestArticle = ({
         </h2>
       </Link>
       <p className="text-sm mb-2 sm:hidden">{summary}</p>
-      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time}
+      </span>
     </li>
   );
 };
@@ -141,10 +143,13 @@ const ArticlesPage: NextPage = () => {
       </Head>
       <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Profile className="pt-14">
-          <AnimatedText text="Words Can Change The World!" className="mb-16 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 xl:!text-6xl lg:!text-6xl md:!text-6xl sm:!text-5xl xs:!text-4xl" />
+          <AnimatedText
+            text="Words Have The Power To Change The World!"
+            className="mb-16 lg:mb-16 xl:mb-16 sm:mb-8 xs:mb-8 xl:!text-6xl lg:!text-6xl md:!text-6xl sm:!text-5xl xs:!text-4xl"
+          />
           <p className="text-6xl font-bold w-full text-center my-16 mt-4 dark:text-light xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl">
             Latest Articles
-            </p>
+          </p>
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16 sm:gap-y-16 sm:grid-cols-1 xs:grid-cols-1 xs:gap-y-8">
             <LatestArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
