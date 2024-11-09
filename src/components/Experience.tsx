@@ -66,36 +66,36 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Tech Corp"
-            companyLink="https://techcorp.com"
-            time="2020 - Present"
-            address="San Francisco, CA"
-            work="Developed and maintained web applications using modern technologies like React and Node.js."
+            position="Freelance Software Engineer Project Consulant"
+            company="Tech Returners"
+            companyLink="https://techreturners.co.uk"
+            time="2024 - 2024"
+            address="Manchester, UK"
+            work="Consulted on the Launchpad project to deliver a custom web application, handling architecture design, implementation, and deployment. Integrated OAuth authentication (Google, Supabase) to enhance user experience and security. Developed robust backend solutions with Supabase for user management and secure data handling, while contributing to frontend development in React, focusing on responsive design and accessibility."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position="Trainee Full Stack Developer"
+            company="Northcoders"
+            companyLink="https://www.northcoders.co.uk"
+            time="2023 - 2024"
+            address="Manchester, UK"
+            work="Completed an intensive bootcamp specializing in web application development. Gained strong proficiency in programming fundamentals, test-driven development, and back-end technologies, including Node.js, APIs, Express, and SQL. Advanced front-end skills in React, creating complex, high-quality web applications. Collaborated effectively in a team environment, contributing to successful project delivery."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position="Personal Trainer"
+            company="The Gym Group/Plant Powered PT"
+            companyLink="https://www.thegymgroup.com"
+            time="2018 - 2023"
+            address="Manchester, UK"
+            work="Provided personalised fitness programs and guidance to clients, helping them achieve their fitness goals. Conducted fitness assessments, designed workout plans, and provided nutritional guidance to ensure clients' overall well-being. Collaborated with clients to set and track fitness goals, providing ongoing support and motivation to help them stay on track."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position="Senior Hair Stylist/AGM"
+            company="Nino Milano Studio"
+            companyLink="https://www.ninomilanostudio.co.uk"
+            time="2001 - 2023"
+            address="Manchester, UK"
+            work="Managed a team of hair stylists, ensuring the smooth operation of the salon. Oversaw the hiring, training, and performance management of staff. Collaborated with clients to understand their hair care needs and provided expert advice on styling and colouring. Maintained a clean and organised salon environment, ensuring a positive experience for clients and staff."
           />
         </ul>
       </div>

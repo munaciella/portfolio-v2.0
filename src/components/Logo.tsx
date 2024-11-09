@@ -1,6 +1,8 @@
 'use client';
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import logo from '../../public/Logo.png';
 
 const MotionLink = motion.a;
 
@@ -20,7 +22,7 @@ const Logo: FC = () => {
     transition: { duration: 1, repeat: Infinity },
   }}
 >
-  FV
+  <Image src={logo} alt="Logo" width={32} height={32} />
 </MotionLink>
     </div>
   );
