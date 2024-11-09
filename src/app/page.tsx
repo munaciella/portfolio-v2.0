@@ -15,7 +15,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Profile className="pt-16 xl:pt-0 md:pt-16 sm:pt-14 sm:mb-2">
+        <Profile className="pt-16 xl:pt-0 md:pt-16 sm:pt-16 sm:mb-2">
           <div className="flex items-center justify-between w-full lg:flex-col xl:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
