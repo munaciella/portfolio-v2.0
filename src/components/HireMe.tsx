@@ -5,8 +5,8 @@ import circleText from '../../public/images/circular-text.png';
 
 const HireMe = () => {
   return (
-    <div className="absolute left-4 -bottom-28 flex items-center justify-center overflow-hidden md:right-2 md:left-auto md:top-2 md:bottom-auto md:absolute lg:right-2 lg:left-auto lg:top-2 lg:bottom-auto lg:absolute">
-      <div className="w-44 md:w-24 lg:w-24 xl:w-36 h-auto flex items-center justify-center relative">
+    <div className="absolute left-4 -bottom-32 xl:bottom-28 xl:left-0 flex items-center justify-center overflow-hidden md:right-2 md:left-auto md:top-2 md:bottom-auto md:absolute lg:right-2 lg:left-auto lg:top-2 lg:bottom-auto lg:absolute">
+      <div className="w-48 md:w-24 lg:w-24 xl:w-40 h-auto flex items-center justify-center relative">
         <Image
           src={circleText}
           alt="Francesco Dev Circular Text"
