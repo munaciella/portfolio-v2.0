@@ -13,6 +13,7 @@ import project2 from '../../../public/images/projects/Wax.png';
 import project3 from '../../../public/images/projects/Munaciella-news.jpg';
 import project4 from '../../../public/images/projects/Currency-converter.jpg'
 import project5 from '../../../public/images/projects/Velovegans.jpg'
+import project6 from '../../../public/images/projects/pairsniper.png'
 import { motion } from 'framer-motion';
 
 const FramerImage = motion.create(Image);
@@ -23,7 +24,7 @@ const FeaturedProject = ({
   img,
   summary,
   link,
-  github,
+  github
 }: {
   type: string;
   title: string;
@@ -90,7 +91,7 @@ const Project = ({
   title,
   img,
   link,
-  github,
+  github
 }: {
   type: string;
   title: string;
@@ -220,8 +221,8 @@ const ProjectPage: NextPage = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project4}
+                title="Data Analytics API"
+                img={project6}
                 link="/"
                 github="/"
                 type="Featured Project"
