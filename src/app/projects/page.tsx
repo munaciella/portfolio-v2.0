@@ -223,8 +223,8 @@ const ProjectPage: NextPage = () => {
               <Project
                 title="Data Analytics API"
                 img={project6}
-                link="/"
-                github="/"
+                link="https://github.com/munaciella/data-analytics-api"
+                github="https://github.com/munaciella/data-analytics-api"
                 type="Featured Project"
               />
             </div>
