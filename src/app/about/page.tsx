@@ -6,7 +6,8 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
-import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
+//import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
+import profileImg from '../../../public/images/profile/fran.png';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
@@ -75,12 +76,23 @@ const AboutPage: NextPage = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-6 xs:p-4">
+            {/* <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-6 xs:p-4">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
-                src={profilePic}
+                src={profileImg}
                 alt="Francesco Dev"
                 className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div> */}
+
+            <div className="col-span-3 relative h-60 w-60 rounded-full border border-dark bg-light p-2 overflow-hidden dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-4 xs:p-2 md:mx-auto sm:h-48 sm:w-48 sm:mx-auto xs:h-48 xs:w-48 xs:mx-auto">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-full bg-dark dark:bg-light" />
+              <Image
+                src={profileImg}
+                alt="Francesco Dev"
+                className="object-cover w-full h-full rounded-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
