@@ -137,10 +137,10 @@ const LatestArticle = ({
 const ArticlesPage: NextPage = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Francesco_Dev</title>
         <meta name="description" content="Articles page of Francesco" />
-      </Head>
+      </Head> */}
       <main className="w-full mb-24 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Profile className="pt-14">
           <AnimatedText

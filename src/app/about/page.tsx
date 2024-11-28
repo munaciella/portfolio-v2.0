@@ -41,10 +41,10 @@ const AnimatedNumbers = ({ value }: { value: number }) => {
 const AboutPage: NextPage = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Francesco_Dev</title>
         <meta name="description" content="A brief description about Francesco" />
-      </Head>
+      </Head> */}
       <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Profile className="pt-16">
           <AnimatedText

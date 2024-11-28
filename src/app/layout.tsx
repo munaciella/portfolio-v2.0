@@ -72,7 +72,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head';
-import { metadata } from './metadata';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -96,8 +95,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <Head>
+        <title>Francesco_Dev</title>
+        <meta name="description" content="A portfolio website for Francesco showcasing skills, projects, and experience." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href={metadata.icons.icon} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
         style={{
