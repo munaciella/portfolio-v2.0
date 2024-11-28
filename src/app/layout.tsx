@@ -10,6 +10,8 @@ import Script from 'next/script';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import TransitionEffect from '@/components/TransitionEffect';
+import Head from 'next/head';
+import { metadata } from './metadata';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -34,6 +36,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="en">
+      <Head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <link rel="icon" href={metadata.icons.icon} />
+</Head>
       <body
         style={{
           fontFamily: montserrat.style.fontFamily,
