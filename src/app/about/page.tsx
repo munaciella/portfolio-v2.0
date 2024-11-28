@@ -42,8 +42,8 @@ const AboutPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Francesco Dev | About Page</title>
-        <meta name="description" content="any description" />
+        <title>Francesco_Dev</title>
+        <meta name="description" content="A brief description about Francesco" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Profile className="pt-16">

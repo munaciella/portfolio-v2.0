@@ -151,8 +151,8 @@ const ProjectPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Francesco Dev | Projects Page</title>
-        <meta name="description" content="any description" />
+        <title>Francesco_Dev</title>
+        <meta name="description" content="Projects developed by Francesco" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Profile className="pt-16">
