@@ -105,7 +105,7 @@ const Navbar: FC = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3 mt-1"
+          className="w-8 mr-3 mt-1"
         >
           <XIcon className="w-8 h-8 fill-dark" />
         </motion.a>
@@ -114,7 +114,7 @@ const Navbar: FC = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
+          className="w-8 mx-3"
         >
           <GithubIcon className="w-8 h-8 fill-dark" />
         </motion.a>
@@ -123,7 +123,7 @@ const Navbar: FC = () => {
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
+          className="w-8 mx-3"
         >
           <LinkedInIcon className="w-8 h-8 fill-dark" />
         </motion.a>
@@ -187,7 +187,7 @@ className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3 text-light dark:text-dark sm:mx-1 mt-1"
+          className="w-8 mr-3 text-light dark:text-dark sm:mx-1 mt-1"
         >
           <XIcon className="w-8 h-8 fill-dark" />
         </motion.a>
@@ -196,7 +196,7 @@ className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1"
+          className="w-8 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1"
         >
           <GithubIcon className="w-8 h-8 fill-dark" />
         </motion.a>
@@ -205,7 +205,7 @@ className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2
           target={'_blank'}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3 sm:mx-1"
+          className="w-8 mx-3 sm:mx-1"
         >
           <LinkedInIcon className="w-8 h-8 fill-dark" />
         </motion.a>
