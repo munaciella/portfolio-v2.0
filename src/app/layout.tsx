@@ -5,11 +5,11 @@ import React, { useEffect } from 'react';
 import { ReactNode } from 'react';
 import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head';
+import Footer from '@/components/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
