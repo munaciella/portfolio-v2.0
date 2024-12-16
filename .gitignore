@@ -11,7 +11,8 @@
 /out/
 
 # Production build output (if applicable)
-# /build
+/build
+
 
 # Miscellaneous files
 .DS_Store
@@ -31,4 +32,8 @@ yarn-error.log*
 
 # VSCode
 .vscode
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 

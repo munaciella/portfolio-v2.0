@@ -14,6 +14,7 @@ const Details = ({
   info: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);  
+
   return (
     <li
       ref={ref}
@@ -23,6 +24,7 @@ const Details = ({
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
+        viewport={{once: true}}
         transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize text-2xl font-bold sm:text-xl xs:text-lg">{type}&nbsp;</h3>

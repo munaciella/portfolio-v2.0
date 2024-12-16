@@ -5,7 +5,7 @@ import Profile from '@/components/Profile';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import React, { useEffect, useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 //import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import profileImg from '../../../public/images/profile/fran.png';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
@@ -19,7 +19,7 @@ const AnimatedNumbers = ({ value }: { value: number }) => {
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (isInView) {
       motionValue.set(value);
     }
