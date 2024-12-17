@@ -32,3 +32,9 @@ yarn-error.log*
 # VSCode
 .vscode
 
+# npm package-lock file (if not tracking)
+package-lock.json
+
+# TypeScript build info
+*.tsbuildinfo
+
