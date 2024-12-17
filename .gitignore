@@ -13,7 +13,6 @@
 # Production build output (if applicable)
 /build
 
-
 # Miscellaneous files
 .DS_Store
 *.pem
@@ -33,3 +32,8 @@ yarn-error.log*
 # VSCode
 .vscode
 
+# npm package-lock file (if not tracking)
+package-lock.json
+
+# TypeScript build info
+*.tsbuildinfo
