@@ -5,7 +5,6 @@ jest.mock('framer-motion', () => ({
   ...jest.requireActual('framer-motion'),
   motion: {
     div: ({ children, ...props }: any) => {
-      console.log(props);
       return <div {...props} data-testid={`motion-div-${props['data-testid']}`}>{children}</div>;
     },
   },
