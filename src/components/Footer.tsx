@@ -66,9 +66,9 @@ const Footer = () => {
       <Image
         src={avatar}
         alt="Francesco's Image"
-        width={36}
-        height={36}
-        className="dark:rounded-full dark:bg-light"
+        width={40}
+        height={40}
+        className="dark:bg-primaryDark dark:border-2 dark:border-primaryDark bg-primary rounded-full border-2 border-primary ml-1"
       />
     </Link>
   </p>
