@@ -110,7 +110,7 @@ const Project = ({
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-96"
+          className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         />
