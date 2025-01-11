@@ -8,10 +8,10 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import project1 from '../../../public/images/projects/Eventsphere.jpg';
+import project1 from '../../../public/images/projects/Eventsphere.png';
 import project2 from '../../../public/images/projects/Wax.png';
 import project3 from '../../../public/images/projects/Munaciella-news.jpg';
-import project4 from '../../../public/images/projects/Currency-converter.jpg'
+import project4 from '../../../public/images/projects/devups.png';
 import project5 from '../../../public/images/projects/Velovegans.jpg'
 import project6 from '../../../public/images/projects/pairsniper.png'
 import { motion } from 'framer-motion';
@@ -110,7 +110,7 @@ const Project = ({
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-96"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         />
@@ -193,7 +193,7 @@ const ProjectPage: NextPage = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="News Web Application"
+                title="News Web App"
                 img={project3}
                 link="https://munaciella-news.netlify.app/"
                 github="https://github.com/munaciella/NC-news"
@@ -202,17 +202,17 @@ const ProjectPage: NextPage = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Currency Converter App"
+                title="Docs Web App"
                 img={project4}
-                link="https://github.com/munaciella/currency-converter"
-                github="https://github.com/munaciella/currency-converter"
+                link="https://devups-notes.vercel.app/"
+                github="https://github.com/munaciella/devups-notes"
                 type="Featured Project"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Recipes Web Application"
+                title="Recipes Web App"
                 img={project5}
                 link="https://velovegans.co.uk"
                 github="https://github.com/munaciella/recipes-website"
