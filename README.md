@@ -1,7 +1,3 @@
-Here’s a README outline based on your project’s features and goals:
-
----
-
 # My Portfolio Project
 
 Welcome to my portfolio project! This application showcases my skills, experience, and projects as a junior software developer. It’s built with modern technologies and designed to provide an engaging, responsive user experience.

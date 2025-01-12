@@ -6,7 +6,6 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
-//import profilePic from '../../../public/images/profile/developer-pic-2.jpg';
 import profileImg from '../../../public/images/profile/fran.png';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
@@ -43,7 +42,10 @@ const AboutPage: NextPage = () => {
     <>
       <Head>
         <title>Francesco_Dev</title>
-        <meta name="description" content="A brief description about Francesco" />
+        <meta
+          name="description"
+          content="A brief description about Francesco"
+        />
       </Head>
       <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Profile className="pt-16">
@@ -76,17 +78,6 @@ const AboutPage: NextPage = () => {
               </p>
             </div>
 
-            {/* <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-6 xs:p-4">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-              <Image
-                src={profileImg}
-                alt="Francesco Dev"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div> */}
-
             <div className="col-span-3 relative h-60 w-60 rounded-full border border-dark bg-light p-2 overflow-hidden dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 sm:mt-8 sm:p-4 xs:p-2 md:mx-auto sm:h-48 sm:w-48 sm:mx-auto xs:h-48 xs:w-48 xs:mx-auto">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-full bg-dark dark:bg-light" />
               <Image
@@ -99,14 +90,6 @@ const AboutPage: NextPage = () => {
             </div>
 
             <div className="col-span-2 flex flex-col items-end justify-center space-y-16 xl:col-span-8 xl:flex-row xl:space-x-16 xl:space-y-0 xl:items-center md:order-3">
-              {/* <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={10} />+
-                </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
-                  satisfied clients
-                </h2>
-              </div> */}
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-6xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={10} />+
@@ -135,4 +118,3 @@ const AboutPage: NextPage = () => {
   );
 };
 export default AboutPage;
-//lg:flex-col line 33 projects page
