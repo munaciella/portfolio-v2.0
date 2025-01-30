@@ -65,6 +65,14 @@ const Experience = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <Details
+            position="Data Analytics API (Cryprocurrency)"
+            company="Ultimate Hero"
+            companyLink=""
+            time="2024 - 2024"
+            address="Manchester, UK"
+            work="Designed and optimised database schemas, improving query performance by 30%. Migrated JavaScript files to TypeScript, enhancing type safety and reducing errors. Built efficient seed scripts, contributed to full-stack development, and implemented Jest testing. Developed RESTful APIs with Express, integrating external APIs to fetch real-time data for cryptocurrency analysis."
+          />
           <Details
             position="Freelance Software Engineer Project Consulant"
             company="Tech Returners"
@@ -87,15 +95,7 @@ const Experience = () => {
             companyLink="https://www.thegymgroup.com"
             time="2018 - 2023"
             address="Manchester, UK"
-            work="Provided personalised fitness programs and guidance to clients, helping them achieve their fitness goals. Conducted fitness assessments, designed workout plans, and provided nutritional guidance to ensure clients' overall well-being. Collaborated with clients to set and track fitness goals, providing ongoing support and motivation to help them stay on track."
-          />
-          <Details
-            position="Senior Hair Stylist/AGM"
-            company="Nino Milano Studio"
-            companyLink="https://www.ninomilanostudio.co.uk"
-            time="2001 - 2023"
-            address="Manchester, UK"
-            work="Managed a team of hair stylists, ensuring the smooth operation of the salon. Oversaw the hiring, training, and performance management of staff. Collaborated with clients to understand their hair care needs and provided expert advice on styling and colouring. Maintained a clean and organised salon environment, ensuring a positive experience for clients and staff."
+            work="Provided personalised fitness programs and guidance to clients, helping them achieve their fitness goals. Conducted fitness assessments, designed workout plans, and provided nutritional guidance to ensure clients' overall well-being. Collaborated with clients to set and track fitness goals, providing ongoing support and motivation."
           />
         </ul>
       </div>

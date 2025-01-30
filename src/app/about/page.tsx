@@ -60,7 +60,7 @@ const AboutPage: NextPage = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I’m Francesco, a software developer passionate about
+                Hi, I’m Francesco, a software engineer passionate about
                 crafting beautiful, functional, and user-centered digital
                 experiences. With two years in the field, I continuously seek
                 innovative ways to bring clients’ visions to life.

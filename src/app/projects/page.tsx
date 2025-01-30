@@ -17,6 +17,7 @@ import project3 from '../../../public/images/projects/Munaciella-news.jpg';
 import project4 from '../../../public/images/projects/devups.png';
 import project5 from '../../../public/images/projects/Velovegans.jpg';
 import project6 from '../../../public/images/projects/pairsniper.png';
+import project7 from '../../../public/images/projects/Clarity Notion-clone.png';
 
 const FramerImage = motion.create(Image);
 
@@ -126,7 +127,16 @@ const ProjectPage: NextPage = () => {
           <p className="text-5xl font-bold w-full text-center my-16 mt-12 lg:mt-4 md:mt-4 dark:text-light lg:text-4xl sm:text-3xl xs:text-3xl">
             Featured Projects
           </p>
+
           <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-12 mt-16">
+          <FeaturedProject
+              title="Clarity Notes Capturer"
+              img={project7}
+              summary="A notes capturing and collaboration platform, enabling seamless note-taking, real-time collaboration, and powerful backend functionalities."
+              tag="#NextJS #Firebase #Cloudflare #TailwindCSS"
+              link="https://clarity-capture.com/"
+              github="https://github.com/munaciella/clarity-notes-capturer"
+            />
             <FeaturedProject
               title="Events Booking Web App"
               img={project1}
