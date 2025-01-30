@@ -66,7 +66,7 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
         <Details
-            position="Data Analytics API (Cryprocurrency)"
+            position="Data Analytics Consultant (Cryprocurrency)"
             company="Ultimate Hero"
             companyLink=""
             time="2024 - 2024"
