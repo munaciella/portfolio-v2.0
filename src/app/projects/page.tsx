@@ -18,6 +18,7 @@ import project4 from '../../../public/images/projects/devups.png';
 import project5 from '../../../public/images/projects/Velovegans.jpg';
 import project6 from '../../../public/images/projects/pairsniper.png';
 import project7 from '../../../public/images/projects/Clarity Notion-clone.png';
+import project8 from '../../../public/images/projects/linkedin.png';
 
 const FramerImage = motion.create(Image);
 
@@ -136,6 +137,14 @@ const ProjectPage: NextPage = () => {
               tag="#NextJS #Firebase #Cloudflare #TailwindCSS"
               link="https://clarity-capture.com/"
               github="https://github.com/munaciella/clarity-notes-capturer"
+            />
+            <FeaturedProject
+              title="Networking Platform"
+              img={project8}
+              summary="A full-stack networking platform where users can connect, interact, and engage through posts and comments."
+              tag="#NextJS #Cloudflare #Firebase #TailwindCSS"
+              link="https://networked.vercel.app"
+              github="https://github.com/munaciella/networking-platform-v2"
             />
             <FeaturedProject
               title="Events Booking Web App"
