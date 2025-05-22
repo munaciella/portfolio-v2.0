@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { usePathname, useRouter } from 'next/navigation';
-import { GithubIcon, LinkedInIcon, XIcon } from './Icons';
+import { GithubIcon, LinkedInIcon } from './Icons';
 import { motion } from 'framer-motion';
 import useThemeSwitcher from '../hooks/useThemeSwitcher';
 
@@ -119,15 +119,6 @@ const Navbar: FC = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
-            target={'_blank'}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-8 mr-3 mt-1"
-          >
-            <XIcon className="w-8 h-8 fill-dark" />
-          </motion.a>
-          <motion.a
             href="https://github.com/munaciella"
             target={'_blank'}
             whileHover={{ y: -2 }}
@@ -221,15 +212,6 @@ const Navbar: FC = () => {
           </nav>
 
           <nav className="flex items-center justify-center flex-wrap mt-2">
-            <motion.a
-              href="https://twitter.com"
-              target={'_blank'}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-8 mr-3 text-light dark:text-dark sm:mx-1 mt-1"
-            >
-              <XIcon className="w-8 h-8 fill-dark" />
-            </motion.a>
             <motion.a
               href="https://github.com/munaciella"
               target={'_blank'}
